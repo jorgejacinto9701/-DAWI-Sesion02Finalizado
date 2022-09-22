@@ -51,7 +51,6 @@ public class AlumnoController {
 			lstMensajes.add(objectError.getDefaultMessage());
 		}
 		if (!CollectionUtils.isEmpty(lstMensajes)) {
-			salida.put("errores", lstMensajes);
 			return ResponseEntity.ok(salida);
 		}
 		
